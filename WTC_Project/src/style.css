@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+
+
+.logo img {
+    width: 65px;
+    padding: 5px; /* Apply padding around both logos */
+}
+
+.rupp-logo {
+    margin-right: 5px; /* Add spacing between the two logos */
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    
+}
+
+nav ul li a,button{
+    color: #000000e2;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    position: relative;
+    color: rgba(0, 0, 0, 0.888);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(123, 152, 180, 0.849);
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: rgba(123, 152, 180, 0.849);
+}
+
+
+.btn {
+    width: 100px;
+    height: 40px;
+    color: #000000e2;
+    background-color: white;
+    border: solid 1px #000000e2;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+.btn:hover {
+    border-top: none; 
+    color: rgba(123, 152, 180, 0.849);
+}
+
+/* .logo:hover{
+    transform: translateX(1px);
+} */
+/* .logo {
+    position: relative;
+    width: 200px;
+}
+
+.logo:hover .fe-logo {
+    transform: translateX(200px); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.fe-logo {
+    transition: transform 0.3s ease-in-out;
+} */
+.logo {
+    position: relative;
+}
+
+.rupp-logo {
+    position: relative;
+}
+
+.rupp-logo:hover + .fe-logo {
+    transform: translateX(200px); /* Move the FE logo 200px to the right */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for the movement */
+}
+
+.fe-logo {
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-text {
+    position: absolute;
+    top: 40%;
+    left: 80px; /* Adjust this to place the text properly */
+    transform: translateY(-50%);
+    opacity: 0;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for text appearance */
+}
+
+.hover-text1 {
+    position: absolute;
+    top: 25%; /* Different top value to position it separately from the first text */
+    left: 80px; /* Adjust this to place the text properly */
+    transform: translateX(60px);
+    opacity: 1; /* Initially hidden */
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.1s ease-in-out; /* Smooth transition for text appearance */
+}
+
+.rupp-logo:hover + .fe-logo + .hover-text {
+    opacity: 1; /* Show the first text when hovering over the RUPP logo */
+}
+
+.rupp-logo:hover + .fe-logo + .hover-text + .hover-text1 {
+    opacity: 0; /* Show the second text when hovering over the RUPP logo */
+}
+
+
+
