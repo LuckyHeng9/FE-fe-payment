@@ -100,41 +100,60 @@ nav ul li a:hover{
 } */
 .logo {
     position: relative;
+    width: 30%;
+   
+}
+.line {
+    position: absolute;
+    left: 75px; 
+    top: 10%;
+    height: 55px;
+    width: 1px;
+    background-color: black;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
+.rupp-logo:hover + .line{
+    transform: translateX(225px); 
+    
+}
 .rupp-logo {
     position: relative;
 }
 
-.rupp-logo:hover + .fe-logo {
-    transform: translateX(200px); /* Move the FE logo 200px to the right */
-    transition: transform 0.5s ease-in-out; /* Smooth transition for the movement */
+.fe-logo {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
 }
 
-.fe-logo {
-    transition: transform 0.5s ease-in-out;
+.rupp-logo:hover + .fe-logo{
+    transform: translateX(235px); 
+}
+.rupp-logo:hover + .fe-logo + .line {
+    opacity: 1; /* Show the line when hovering over RUPP logo */
 }
 
 .hover-text {
     position: absolute;
-    top: 40%;
-    left: 80px; /* Adjust this to place the text properly */
-    transform: translateY(-50%);
+    top: 10%;
+    left: 75px; /* Adjust this to place the text properly */
     opacity: 0;
     font-size: 16px;
     font-weight: bold;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for text appearance */
+    transition: opacity 0.4s ease-in-out; /* Smooth transition for text appearance */
 }
 
 .hover-text1 {
     position: absolute;
-    top: 25%; /* Different top value to position it separately from the first text */
+    top: 10%; /* Different top value to position it separately from the first text */
     left: 80px; /* Adjust this to place the text properly */
     transform: translateX(60px);
     opacity: 1; /* Initially hidden */
     font-size: 16px;
     font-weight: bold;
-    transition: opacity 0.1s ease-in-out; /* Smooth transition for text appearance */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for text appearance */
 }
 
 .rupp-logo:hover + .fe-logo + .hover-text {
