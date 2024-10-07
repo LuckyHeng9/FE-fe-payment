@@ -55,7 +55,7 @@ nav ul li a::before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: rgb(123, 152, 180, 0.849);
+    background-color: #7b98b4d8;
     transition: width 0.3s ease-in-out;
 }
 nav ul li a:hover::before{
@@ -77,12 +77,29 @@ nav ul li a:hover{
     position: relative;
     transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
     cursor: pointer;
+    
 }
 
-.btn:hover {
+.btn-sign-up{
+    background-color: #426e97;
+    color: white;
+}
+
+
+
+.btn-sign-in {
+    margin-right: 35px; /* Spacing between Sign In and Sign Up buttons */
+}
+
+.btn-sign-in:hover {
     border-top: none; 
     color: rgba(123, 152, 180, 0.849);
 }
+.btn-sign-up:hover{
+    background-color: darkgray;
+    color: black;
+}
+
 
 /* .logo:hover{
     transform: translateX(1px);
@@ -107,7 +124,7 @@ nav ul li a:hover{
    
 }
 
-/* Move the line when hover  */
+
 .line {
     position: absolute;
     left: 75px;
