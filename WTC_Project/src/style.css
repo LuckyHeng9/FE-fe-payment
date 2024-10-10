@@ -301,3 +301,21 @@ nav ul li a:hover {
         display: none;
     }
 }
+/* Style for text Area*/
+.text-area{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color:#426e97
+
+}
+.card-pay{
+    margin-left:auto;
+    display:block;
+    width:514px;
+    height:553px;
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+}
