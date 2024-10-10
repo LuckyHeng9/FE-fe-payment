@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-/* varaible */
-:root{
-    --background-color: #000000e2 ;
+header{
+    position: relative;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -19,10 +18,10 @@ nav{
    
 }
 
-
 .logo img {
-    width: 65px;
-    padding: 5px; /* Apply padding around both logos */
+    width: 82px;
+    height: auto;
+    padding: 5px; 
 }
 
 .rupp-logo {
@@ -37,17 +36,18 @@ nav ul li{
 }
 
 nav ul li a,button{
-    color: var(--background-color);
-    font-weight: bold;
-    font-size: 18px;
+    font-family:'Konkhmer Sleokchher', sans-serif;
+    color: #000000e2;
+    font-size: 20px;
     text-decoration: none;
 }
 
 nav ul li a {
+    font-family:'Koulen', sans-serif;
     position: relative;
-    color: var(--background-color);
-    font-weight: bold;
-    font-size: 18px;
+    color: #1B1A40;
+    font-weight: Regular;
+    font-size: 26px;
     text-decoration: none;
 }
 
@@ -58,49 +58,53 @@ nav ul li a::before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #7b98b4d8;
-    transition: width 0.3s ease-in-out;
+    background-color: #3F3D89;
+    transition: width 300ms ease-in-out;
 }
 nav ul li a:hover::before{
     width: 100%;
 }
 
 nav ul li a:hover{
-    color: rgba(123, 152, 180, 0.849);
+    color: #3F3D89;
     cursor: pointer;
 }
 
 
 .btn {
-    width: 100px;
-    height: 40px;
-    color: var(--background-color);
+    width: 121px;
+    height: 47px;
+    color: #1B1A40;
     background-color: white;
-    border: solid 1px var(--background-color);
+    border: solid 2px #1B1A40;
+    border-radius: 3px;
     position: relative;
-    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    transition: all 300ms ease-in-out; /* Smooth transition for all properties */
     cursor: pointer;
     
 }
 
 .btn-sign-up{
-    background-color: #426e97;
-    color: white;
+    background-color: #1D405C;
+    color: #FFFF;
 }
 
 
 
 .btn-sign-in {
-    margin-right: 35px; /* Spacing between Sign In and Sign Up buttons */
+    margin-right: 21px; /* Spacing between Sign In and Sign Up buttons */
 }
 
 .btn-sign-in:hover {
     border-top: none; 
-    color: rgba(123, 152, 180, 0.849);
+    color: #3F3D89;
+    border: #3F3D89;
 }
 .btn-sign-up:hover{
-    background-color: darkgray;
-    color: black;
+    background-color: #D0DDE5;
+    color: #3F3D89;
+    border: #3F3D89;
+
 }
 
 
@@ -126,15 +130,23 @@ nav ul li a:hover{
     cursor: pointer;
    
 }
+.logo h3{
+    font-family: 'Khmer OS Muol', sans-serif;
+    font-size: 15px;
+}
+.logo h5{
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 15px;
+}
 
 
 .line {
     position: absolute;
-    left: 75px;
+    left: 80px;
     top: 10%;
-    height: 55px;
+    height: 65px;
     width: 1px;
-    background-color: black;
+    background-color: #014164;
     opacity: 0;
     transition: transform 0.5s ease-in-out;
     
@@ -142,11 +154,10 @@ nav ul li a:hover{
 
 .rupp-logo:hover ~ .line {
     opacity: 1;
-    transform: translateX(235px); /* Moves the line on hover */
+    transform: translateX(260px); /* Moves the line on hover */
 }
 .rupp-logo {
     position: relative;
-    
 }
 
 .fe-logo {
@@ -155,7 +166,7 @@ nav ul li a:hover{
 }
 
 .rupp-logo:hover + .fe-logo{
-    transform: translateX(235px); 
+    transform: translateX(260px); 
 }
 .rupp-logo:hover + .fe-logo + .line {
     opacity: 1; /* Show the line when hovering over RUPP logo */
@@ -164,21 +175,20 @@ nav ul li a:hover{
 .hover-text {
     position: absolute;
     top: 17%;
-    left: 75px; /* Adjust this to place the text properly */
+    left: 90px; /* Adjust this to place the text properly */
     opacity: 0;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
+    color: #1D405C;
     transition: opacity 0.4s ease-in-out; /* Smooth transition for text appearance */
 }
 
 .hover-text1 {
     position: absolute;
     top: 17%; /* Different top value to position it separately from the first text */
-    left: 80px; /* Adjust this to place the text properly */
+    left: 110px; /* Adjust this to place the text properly */
     transform: translateX(60px);
     opacity: 1; /* Initially hidden */
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
     transition: opacity 0.3s ease-in-out; /* Smooth transition for text appearance */
 }
 
@@ -231,7 +241,7 @@ nav ul li a:hover{
         top: 60px; /* Adjust this as needed */
         right: 0;
         width: 100%;
-        background: #20202080;
+        background: rgba(32, 32, 32, 0.5);
         flex-direction: column;
         padding: 15px 0;
         transition: all 0.3s ease; /* Smooth transition for mobile menu */
@@ -254,6 +264,35 @@ nav ul li a:hover{
         padding: 10px;
     }
 }
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+    padding-left: 10%;
+    
+}
+.content h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 96px;
+    color: #1B1A40;
+}
+.content p{
+    margin: 10px 0 30px;
+    font-family: 'Koulen',sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.43);
+}
+
+.main-pic{
+    padding-top: 10%;
+    max-width: 600px;
+    padding-left: 10%;
+    padding-right: 1%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin-bottom: 30%;
+}
+
 
 @media  (max-width: 500px) {
     .logo .rupp-logo{
