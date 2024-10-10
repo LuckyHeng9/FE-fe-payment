@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+}
+:root{
+    --background-color: #000000e2 ;
 }
 
 nav{
@@ -34,7 +36,7 @@ nav ul li{
 }
 
 nav ul li a,button{
-    color: #000000e2;
+    color: var(--background-color);
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
@@ -42,7 +44,7 @@ nav ul li a,button{
 
 nav ul li a {
     position: relative;
-    color: rgba(0, 0, 0, 0.888);
+    color: var(--background-color);
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
@@ -71,9 +73,9 @@ nav ul li a:hover{
 .btn {
     width: 100px;
     height: 40px;
-    color: #000000e2;
+    color: var(--background-color);
     background-color: white;
-    border: solid 1px #000000e2;
+    border: solid 1px var(--background-color);
     position: relative;
     transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
     cursor: pointer;
@@ -228,7 +230,7 @@ nav ul li a:hover{
         top: 60px; /* Adjust this as needed */
         right: 0;
         width: 100%;
-        background: rgba(32, 32, 32, 0.5);
+        background: #20202080;
         flex-direction: column;
         padding: 15px 0;
         transition: all 0.3s ease; /* Smooth transition for mobile menu */
