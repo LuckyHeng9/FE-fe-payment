@@ -9,7 +9,6 @@
 :root {
     --background-color: #000000e2;
 }
-
 nav {
     display: flex;
     align-items: center;
