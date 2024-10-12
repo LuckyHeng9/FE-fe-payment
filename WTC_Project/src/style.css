@@ -1,122 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 :root {
-    --background-color: #000000e2;
+  --background-color: #000000e2;
 }
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo img {
-    width: 65px;
-    padding: 5px;
-    /* Apply padding around both logos */
+  width: 65px;
+  padding: 5px;
+  /* Apply padding around both logos */
 }
 
 .logo .fe-logo {
-    width: 66px;
-    padding: 0 1.7px;
+  width: 66px;
+  padding: 0 1.7px;
 }
 
 .rupp-logo {
-    margin-right: 5px;
-    /* Add spacing between the two logos */
+  margin-right: 5px;
+  /* Add spacing between the two logos */
 }
 
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
-
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
 }
 
 nav ul li a,
 button {
-    color: var(--background-color);
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
+  color: var(--background-color);
+  font-size: 18px;
+  text-decoration: none;
 }
 
 nav ul li a {
-    font-family:'Koulen', sans-serif;
-    position: relative;
-    color: #1B1A40;
-    font-weight: Regular;
-    font-size: 26px;
-    text-decoration: none;
+  font-family: "Koulen", sans-serif;
+  position: relative;
+  color: #1B1A40;
+  font-size: 26px;
+  text-decoration: none;
 }
 
 nav ul li a::before {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #3F3D89;
-    transition: width 300ms ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #3F3D89;
+  transition: width 300ms ease-in-out;
 }
 
 nav ul li a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 nav ul li a:hover {
-    color: rgba(123, 152, 180, 0.849);
-    cursor: pointer;
+  color: #3F3D89;
+  cursor: pointer;
 }
 
-
 .btn {
-    width: 121px;
-    height: 47px;
-    color: #1B1A40;
-    background-color: white;
-    border: solid 2px #1B1A40;
-    border-radius: 3px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    /* Smooth transition for all properties */
-    cursor: pointer;
-
+  width: 121px;
+  height: 47px;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 20px;
+  color: #1B1A40;
+  background-color: #FFFFFF;
+  border: solid 2px #1b1a40;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for all properties */
+  cursor: pointer;
 }
 
 .btn-sign-up {
-    background-color: #426e97;
-    color: white;
+  background-color: #1D405C;
+  color: #FFFFFF;
+  border: #1D405C;
 }
 
-
-
 .btn-sign-in {
-    margin-right: 35px;
-    /* Spacing between Sign In and Sign Up buttons */
+  margin-right: 21px;
+  /* Spacing between Sign In and Sign Up buttons */
 }
 
 .btn-sign-in:hover {
-    border-top: none;
-    color: rgba(123, 152, 180, 0.849);
+  border: none;
+  color:#3F3D89;
 }
 
 .btn-sign-up:hover {
-    background-color: darkgray;
-    color: black;
+  background-color: #D0DDE5;
+  color:#1B1A40;
 }
-
 
 /* .logo:hover{
     transform: translateX(1px);
@@ -135,225 +127,208 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 } */
 .logo {
-    position: relative;
-    width: 30%;
-    cursor: pointer;
-
+  position: relative;
+  width: 30%;
+  cursor: pointer;
 }
-.logo h3{
-    font-family: 'Khmer OS Muol', sans-serif;
-    font-size: 15px;
+.logo h3 {
+  font-family: "Khmer OS Muol", sans-serif;
+  font-size: 15px;
 }
-.logo h5{
-    font-family: 'Konkhmer Sleokchher', sans-serif;
-    font-size: 15px;
+.logo h5 {
+  font-family: "Konkhmer Sleokchher", sans-serif;
+  font-size: 15px;
 }
-
 
 .line {
-    position: absolute;
-    left: 80px;
-    top: 10%;
-    height: 65px;
-    width: 1px;
-    background-color: #014164;
-    opacity: 0;
-    transition: transform 0.5s ease-in-out;
-
+  position: absolute;
+  left: 80px;
+  top: 10%;
+  height: 65px;
+  width: 1px;
+  background-color: #014164;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
 }
 
-.rupp-logo:hover~.line {
-    opacity: 1;
-    transform: translateX(235px);
-    /* Moves the line on hover */
+.rupp-logo:hover ~ .line {
+  opacity: 1;
+  transform: translateX(235px);
+  /* Moves the line on hover */
 }
 
 .rupp-logo {
-    position: relative;
+  position: relative;
 }
 
 .fe-logo {
-    position: relative;
-    transition: transform 0.5s ease-in-out;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 
-.rupp-logo:hover+.fe-logo {
-    transform: translateX(235px);
+.rupp-logo:hover + .fe-logo {
+  transform: translateX(245px);
 }
 
-.rupp-logo:hover+.fe-logo+.line {
-    opacity: 1;
-    /* Show the line when hovering over RUPP logo */
+.rupp-logo:hover + .fe-logo + .line {
+  opacity: 1;
+  /* Show the line when hovering over RUPP logo */
 }
 
 .hover-text {
-    position: absolute;
-    top: 17%;
-    left: 75px;
-    /* Adjust this to place the text properly */
-    opacity: 0;
-    font-size: 16px;
-    font-weight: bold;
-    transition: opacity 0.4s ease-in-out;
-    /* Smooth transition for text appearance */
+  position: absolute;
+  top: 17%;
+  left: 75px;
+  /* Adjust this to place the text properly */
+  opacity: 0;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.4s ease-in-out;
+  /* Smooth transition for text appearance */
 }
 
 .hover-text1 {
-    position: absolute;
-    top: 17%;
-    /* Different top value to position it separately from the first text */
-    left: 80px;
-    /* Adjust this to place the text properly */
-    transform: translateX(60px);
-    opacity: 1;
-    /* Initially hidden */
-    font-size: 16px;
-    font-weight: bold;
-    transition: opacity 0.3s ease-in-out;
-    /* Smooth transition for text appearance */
+  position: absolute;
+  top: 17%;
+  /* Different top value to position it separately from the first text */
+  left: 80px;
+  /* Adjust this to place the text properly */
+  transform: translateX(60px);
+  opacity: 1;
+  /* Initially hidden */
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+  /* Smooth transition for text appearance */
 }
 
-.rupp-logo:hover+.fe-logo+.hover-text {
-    opacity: 1;
-    /* Show the first text when hovering over the RUPP logo */
+.rupp-logo:hover + .fe-logo + .hover-text {
+  opacity: 1;
+  /* Show the first text when hovering over the RUPP logo */
 }
 
-.rupp-logo:hover+.fe-logo+.hover-text+.hover-text1 {
-    opacity: 0;
-    /* Show the second text when hovering over the RUPP logo */
+.rupp-logo:hover + .fe-logo + .hover-text + .hover-text1 {
+  opacity: 0;
+  /* Show the second text when hovering over the RUPP logo */
 }
 
 /* New code */
 .menu-btn {
-    width: 30px;
-    height: 30px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-
+  width: 30px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-btn i {
-    font-size: 30px;
+  font-size: 30px;
 }
-
 
 /* Mobile menu button */
 .menu-btn {
-    display: none;
-    /* Hide on larger screens */
-    cursor: pointer;
+  display: none;
+  /* Hide on larger screens */
+  cursor: pointer;
 }
 
 /* Mobile menu button and responsiveness */
 @media (max-width: 1037px) {
-    .menu-btn {
-        display: block;
-        /* Show the menu button */
-    }
+  .menu-btn {
+    display: block;
+    /* Show the menu button */
+  }
 
-    nav {
-        padding: 1rem;
-    }
+  nav {
+    padding: 1rem;
+  }
 
-    /* Hide hover text on mobile */
-    .logo .hover-text,
-    .logo .hover-text1 {
-        display: none;
-    }
+  /* Hide hover text on mobile */
+  .logo .hover-text,
+  .logo .hover-text1 {
+    display: none;
+  }
 
-    .side-bar{
-        position: absolute;
-        top: 0;
-        right: -250px; /* Start off-screen */
-        height: 100vh;
-        width: 250px;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 14%;
-        box-shadow: -10px 0 10px rgba(0,0,0,0.07);
-        transition: all 0.3s ease-in-out;
-        opacity: 0;
-        overflow: hidden;
-    }
-
-    .side-bar a {
-        display: block;
-        padding: 5px;
-        text-align: center;
-    }
-
-    /* Center the button */
-    .side-bar .btn {
-        width: 100%;
-        display: block;
-        margin: 35px auto;
-        margin-top: 5px;
-        text-align: center;
-        padding: 0 50px;
-    }
-
-    .side-bar.active {
-        display: flex;
-        right: 0;
-        opacity: 1;
-    
-    }
-
-
-}
-.content{
-    margin-top: 10%;
-    max-width: 600px;
-    padding-left: 10%;
-    
-}
-.content h1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 96px;
-    color: #1B1A40;
-}
-.content p{
-    margin: 10px 0 30px;
-    font-family: 'Koulen',sans-serif;
-    font-size: 32px;
-    color: rgba(0, 0, 0, 0.43);
-}
-
-.main-pic{
-    padding-top: 10%;
-    max-width: 600px;
-    padding-left: 10%;
-    padding-right: 1%;
+  .side-bar {
     position: absolute;
-    bottom: 0;
-    right: 10%;
-    margin-bottom: 30%;
+    top: 0;
+    right: -250px; /* Start off-screen */
+    height: 100vh;
+    width: 250px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .side-bar a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+
+  /* Center the button */
+  .side-bar .btn {
+    width: 100%;
+    display: block;
+    margin: 35px auto;
+    margin-top: 5px;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  .side-bar.active {
+    display: flex;
+    right: 0;
+    opacity: 1;
+  }
 }
 
+.main-pic {
+  padding-top: 10%;
+  max-width: 600px;
+  padding-left: 10%;
+  padding-right: 1%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  margin-bottom: 30%;
+}
 
 @media (max-width: 500px) {
-    .logo .rupp-logo {
-        display: none;
-    }
+  .logo .rupp-logo {
+    display: none;
+  }
 }
 /* Style for text Area*/
-.text-area{
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-    color:#426e97
-
+.text-area {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.card-pay{
-    margin-left:auto;
-    display:block;
-    width:514px;
-    height:553px;
-    border-top-left-radius: 41px;
-    border-top-right-radius: 41px;
+.text-area h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 96px;
+    color: #1b1a40;
+  }
+  .text-area p {
+    margin: 10px 0 30px;
+    font-family: "Koulen", sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.43);
+  }
+.card-pay {
+  margin-left: auto;
+  display: block;
+  width: 514px;
+  height: 553px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 41px;
 }
